@@ -21,7 +21,6 @@ router.get('/owned', authenticate, check('operator'), (req, res) => {
         .catch(error => res.status(500).json({error:error.message}));
 })
 
-
 router.post('/ratings', (req, res) => {
   const name = req.body
 

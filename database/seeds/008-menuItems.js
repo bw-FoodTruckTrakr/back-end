@@ -1,5 +1,4 @@
   
-
 exports.seed = function(knex) {
   return knex('menuItems').insert([
     {id: 1, truck_id:1, itemName:"California Pizza", itemDescription:"light thin-crust pizza with fresh local ingredients as toppings – artichoke, goat cheese, chicken, avocado.", itemPrice: 13.99,  customerRatingAvg: 4.5},
@@ -16,4 +15,4 @@ exports.seed = function(knex) {
     {id: 12, truck_id:5, itemName:"Hamburger", itemDescription:"all american burger",itemPrice: 5.00, customerRatingAvg: 1.8},
     {id: 13, truck_id:5, itemName:"Cheeseburger", itemDescription:"our award winning burger with cheese", itemPrice: 6.00,  customerRatingAvg: 2.4},
   ]);
-};
+}; 

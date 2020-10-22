@@ -1,8 +1,11 @@
 # back-end
 
 deployed landing page: https://foodtrucktrackr7.netlify.app/
+
 deployed react app: https://foodtrucktrackr7.vercel.app/
+
 deployed API: https://foodtrucktrackr7.herokuapp.com/
+
 
 
 ## **Auth Endpoints**

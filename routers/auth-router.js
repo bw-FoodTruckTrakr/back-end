@@ -20,7 +20,7 @@ router.get('/operators', (req, res) => {
 router.post('/register', (req, res) => {
     let user = req.body;
     const hash = bcrypt.hashSync(user.password, 6);
-    user.password = hash;
+    user.password = hash; 
 
     Users.insert(user)
         .then(newUser => {
@@ -38,7 +38,7 @@ router.post('/register', (req, res) => {
 });
 
 router.post('/login', (req, res) => {
-    const { type, username, password } = req.body;
+    let { type, username, password } = req.body;
   
     Users.findUser({ type, username })
       .first()
